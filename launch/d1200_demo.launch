@@ -1,0 +1,7 @@
+<launch>
+  <!-- Run d1200 demo node  -->
+  <node pkg="mynteye_d1200_example" type="mynteye_d1200_node" name="mynteye_d1200_node"/>
+
+  <!-- Start RViz with custom view -->
+  <node pkg="rviz" type="rviz" name="show_rviz" args="-d $(find mynteye_d1200_example)/rviz/demo.rviz"/>    
+</launch>
